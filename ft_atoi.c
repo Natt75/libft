@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/19 15:25:21 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/21 12:05:39 by luiglesi         ###   ########.fr       */
+/*   Created: 2023/09/21 10:15:59 by luiglesi          #+#    #+#             */
+/*   Updated: 2023/09/21 13:20:08 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memset(void *b, int c, size_t len)
+int	ft_atoi(const char *str)
 {
-	unsigned int	i;
-	unsigned int	b2;
+	int	i;
+	int	val;	
 
 	i = 0;
-	b2 = (unsigned char*)b;
-	while (i < len)
+	while ((str[i] != '\0') && (str[i] >= '0' && str[i] <= '9'))
 	{
-		i++;
-		b2[i] = (unsigned char*)c;
+		val = val * 10 + (str[i] - '0');
+			i++;
 	}
-	return (b);
+	return (val);
+	if (str[i] >= 65 && str[i] <= 122)
+		return (0);
 }

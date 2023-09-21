@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:43:50 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/20 16:07:26 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/09/21 10:15:35 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <string.h>
 # include <ctype.h>
 # include <xlocale.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int c);
 int		ft_isprint(int c);
