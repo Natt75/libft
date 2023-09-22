@@ -6,6 +6,10 @@ int	ft_atoi(const char *str)
 	int	val;	
 
 	i = 0;
+	while (str[i] >= 32)
+	{
+		i++;
+	}
 	while ((str[i] != '\0') && (str[i] >= '0' && str[i] <= '9'))
 	{
 		val = val * 10 + (str[i] - '0');
