@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 10:15:59 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/21 13:20:08 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/09/21 14:43:13 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,9 @@ int	ft_atoi(const char *str)
 	if (str[i] >= 65 && str[i] <= 122)
 		return (0);
 }
+/* int main()
+{
+    char num[] = "AAA12345";
+	printf("%d", ft_atoi(num));
+
+} */

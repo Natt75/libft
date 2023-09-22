@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:43:50 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/21 10:15:35 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/09/21 14:16:26 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+int		ft_atoi(const char *str);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlen(const char *str);
 
