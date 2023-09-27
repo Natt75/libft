@@ -1,11 +1,8 @@
-FLAGS = -Wall -Wextra -Werror
-#esto es para ir compilando 
-CC = gcc
 NAME = libft.a
-#Nombre del archivo 
+FLAGS = -Wall -Wextra -Werror
+CC = gcc
 AR = ar -rcs#para ir PRecompilando todo
 CLEAN = rm -Rf
-
 SRC = 	\ 
 		ft_isalpha.c\
 		ft_isditig.c\
@@ -18,19 +15,23 @@ SRC = 	\
 		ft_strlen.c\
 		ft_atoi.c\
 
-OBJ = $(SRCS:.c=.o) #los convierte en punto O a todas los de adentro de SRC
+OBJ := $(SRC:.c=.o) #los convierte en punto O a todas los de adentro de SRC
 
 all: $(NAME) #para ejecutar todo lo que va despues de ALL
 
-$(NAME): %.o
-	$(AR)$(OBJ)$(NAME)
+$(NAME): *.o
+	ar rcs $(NAME) $(OBJ)
 
 
-%.o = 
-	$(CC)$(FLAGS) -c $(SRC)
+%.o : 
+	%.o $(CC)$(FLAGS) -c $(SRC)
 
-clean =
+clean :
+$(CLEAN) ./*.o
 
-Fclean = 
+Fclean : 
+$(CLEAN) ./*.o
+$(CLEAN) ./*.a
 
-.PHONY 
+re : flcean all
+.PHONY: all clean fclean re

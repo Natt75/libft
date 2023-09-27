@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 10:16:42 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/21 10:16:45 by luiglesi         ###   ########.fr       */
+/*   Created: 2023/09/27 10:02:31 by luiglesi          #+#    #+#             */
+/*   Updated: 2023/09/27 13:05:44 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
-char	*strnstr(const char *haystack, const char *needle, size_t len)
+char	ft_strchr(const char *s, int c)
 {
-
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			return (*s);
+		}
+		s++;
+	}
+	return (0);
 }
+// /* int	main ()
+// {
+// 	
+// 	
+// } */

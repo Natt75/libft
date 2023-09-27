@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:25:21 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/22 13:57:56 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/09/27 16:29:06 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
+	while (len--)
+	*((unsigned char *)b + len = (unsigned char )c);
+}
+/* {
 	unsigned int	i;
 	unsigned int	b2;
 
@@ -25,4 +29,6 @@ void	*ft_memset(void *b, int c, size_t len)
 		i++;
 	}
 	return (b);
-}
+	esta es otra funcion rechulona
+	
+} */

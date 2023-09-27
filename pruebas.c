@@ -6,13 +6,13 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 13:32:41 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/22 13:56:36 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/09/27 16:28:39 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include <stdio.h>
-
+/* 
 int	ft_atoi(const char *str) // 13 => -13
 {
 	int	i;
@@ -42,4 +42,4 @@ int	ft_atoi(const char *str) // 13 => -13
 	if (less == -1)
 		val = val * less;
 	return (val);
-}
+} */
