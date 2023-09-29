@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 12:16:21 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/27 16:27:17 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/09/29 15:22:32 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,18 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	dstlen;
-	size_t	srclen;
 	size_t	i;
+	size_t	j;
 
 	i = 0;
-	srclen= ft_strlen(src);
-	dstlen = ft_strlen(dst);
-	while (dstlen >= dstsize)
-	{
-		total = dstlen + srclen;
-	}
-	return (total);
+	j = 0;
+	while (dst[i] != '\0' )
+		i++;
+	while (src[j] != '\0' )
+		j++;
+	return (i + j);
 }
-
-/* 
-
+/*
 Natanael del futuro(esta tarde)
 mira la libreta para ver como se hace bien
 aca nos dejo la pista

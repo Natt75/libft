@@ -1,37 +1,34 @@
 NAME = libft.a
-FLAGS = -Wall -Wextra -Werror
+SOURCES = \
+			ft_isalpha.c\
+			ft_isditig.c\
+			ft_isalnum.c\
+			ft_isascii.c\
+			ft_isprint.c\
+			ft_tolower.c\
+			ft_toupper.c\
+			ft_strncmp.c\
+			ft_strlen.c\
+			ft_atoi.c\
+OBJECTS = $(SOURCES:.c=.o)
+
 CC = gcc
-AR = ar -rcs#para ir PRecompilando todo
-CLEAN = rm -Rf
-SRC = 	\ 
-		ft_isalpha.c\
-		ft_isditig.c\
-		ft_isalnum.c\
-		ft_isascii.c\
-		ft_isprint.c\
-		ft_tolower.c\
-		ft_toupper.c\
-		ft_strncmp.c\
-		ft_strlen.c\
-		ft_atoi.c\
+CFLAGS = -Wall -Wextra -Werror
 
-OBJ := $(SRC:.c=.o) #los convierte en punto O a todas los de adentro de SRC
+all: $(NAME)
 
-all: $(NAME) #para ejecutar todo lo que va despues de ALL
+$(NAME): $(OBJECTS)
+	$(AR) -r $@ $?
 
-$(NAME): *.o
-	ar rcs $(NAME) $(OBJ)
+%.o: %.c
+	$(CC) -c $(CFLAGS) $?
 
+clean:
+	rm -f $(OBJECTS) $(BOBJECTS)
 
-%.o : 
-	%.o $(CC)$(FLAGS) -c $(SRC)
+fclean: clean
+	rm -f $(NAME)
 
-clean :
-$(CLEAN) ./*.o
+re: fclean all
 
-Fclean : 
-$(CLEAN) ./*.o
-$(CLEAN) ./*.a
-
-re : flcean all
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re
