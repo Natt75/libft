@@ -1,35 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/27 12:16:21 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/29 16:00:37 by luiglesi         ###   ########.fr       */
+/*   Created: 2023/09/29 15:32:19 by luiglesi          #+#    #+#             */
+/*   Updated: 2023/09/29 16:46:04 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	j;
 
 	i = 0;
-	j = 0;
-	while (dst[i] != '\0' )
-		i++;
-	while (src[j] != '\0' )
-		j++;
-	return (i + j);
+	j = ft_strlen((char *) src);
+	if (dstsize)
+	{
+		while (src[i] != '\0' && i < dstsize - 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+	}
+	return (j);
 }
-/*
-int main() {
-    
-    char a[]  ="1234567891";
-    char b[]  ="1235";
-
-    printf("%zu", ft_strlcat(a, b, 4));
-}*/

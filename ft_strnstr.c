@@ -1,35 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/27 12:16:21 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/29 16:00:37 by luiglesi         ###   ########.fr       */
+/*   Created: 2023/09/29 17:26:59 by luiglesi          #+#    #+#             */
+/*   Updated: 2023/09/29 17:44:52 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+char	*strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
-	size_t	j;
+	size_t	hlen;
 
 	i = 0;
-	j = 0;
-	while (dst[i] != '\0' )
-		i++;
-	while (src[j] != '\0' )
-		j++;
-	return (i + j);
-}
-/*
-int main() {
-    
-    char a[]  ="1234567891";
-    char b[]  ="1235";
+	hlen = strlen((char *) haystack)
 
-    printf("%zu", ft_strlcat(a, b, 4));
-}*/
+	while (haystack != '\0' && needle)
+	{
+		needle[i]++;
+	}
