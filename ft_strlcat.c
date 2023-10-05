@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 12:16:21 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/29 16:00:37 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/10/05 18:42:50 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	j = 0;
-	while (dst[i] != '\0' )
-		i++;
+	if (src == 0 || dst == 0)
+		return (0);
+	else
+		while (dst[i] != '\0' )
+			i++;
 	while (src[j] != '\0' )
-		j++;
-	return (i + j);
+			j++;
+	if (j > dstsize)
+		return (i + j);
 }
 /*
 int main() {

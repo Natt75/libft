@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 17:26:59 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/29 17:44:52 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/09/29 18:08:06 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,5 @@ char	*strnstr(const char *haystack, const char *needle, size_t len)
 	{
 		needle[i]++;
 	}
+}
+

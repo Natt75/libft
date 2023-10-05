@@ -24,7 +24,7 @@ $(NAME): $(OBJECTS)
 	$(CC) -c $(CFLAGS) $?
 
 clean:
-	rm -f $(OBJECTS) $(BOBJECTS)
+	rm -f $(OBJECTS) $(OBJECTS)
 
 fclean: clean
 	rm -f $(NAME)

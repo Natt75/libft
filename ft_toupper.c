@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 15:11:50 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/20 15:46:08 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/10/05 18:40:52 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_toupper(int c)
 {	
-	if ((c >= 'a' && c <= 'z'))
-	{
+	if ((c >= 97 && c <= 120))
 		return (c - 32);
-	}
+	else
+		return (0);
 }
 
 /* int main ()

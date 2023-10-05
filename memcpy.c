@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   memcpy.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 15:46:29 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/10/05 18:40:33 by luiglesi         ###   ########.fr       */
+/*   Created: 2023/10/05 17:51:24 by luiglesi          #+#    #+#             */
+/*   Updated: 2023/10/05 18:11:45 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
-{	
-	if ((c >= 65 && c <= 90))
-		return (c + 32);
-	else
-		return (0);
-}
-/* int main ()
+void	*memcpy(void *dst, const void *src, size_t n);
 {
-    printf("%d", ft_lower('b'));
-} */
+	unsigned const char	*src1;
+	unsigned char	*dst1;
+	size_t = i;
+
+	src1 = (unsigned char *)src;
+	dst1 = (unsigned char *)dst;
+	i = 0;
+	if ((src))
+	{
+
+	}
+}

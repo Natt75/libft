@@ -5,7 +5,7 @@ CLEAN = rm -Rf
 HEADER = libft.h
 SRC = 	\
 		ft_isalpha.c \
-		ft_isditig.c \
+		ft_isdigit.c \
 		ft_isalnum.c \
 		ft_isascii.c \
 		ft_isprint.c \
@@ -14,25 +14,24 @@ SRC = 	\
 		ft_strncmp.c \
 		ft_strlen.c \
 		ft_atoi.c \
-		ft_strlcat \
-		ft_strlcpy \
+		ft_strlcat.c \
+		ft_strlcpy.c\
 
-OBJ := $(SRC:.c=.o) #los convierte en punto O a todas los de adentro de SRC
+OBJ = $(SRC:.c=.o) #los convierte en punto O a todas los de adentro de SRC
 
 all: $(NAME) #para ejecutar todo lo que va despues de ALL
 
-$(NAME): %.o $(HEADER)
+$(NAME): %.o
 	@ar rcs $(NAME) $(OBJ)
 
+%.o:
+	$(CC) $(FLAGS) -c $(SRC)
 
-%.o : 
-	$(CC)$(FLAGS) -c $(SRC)
+clean:
+	$(CLEAN) *.o
 
-clean :
-	$(CLEAN) ./*.o
-
-Fclean : clean
-	$(CLEAN) ./*.a
+Fclean: clean
+	$(CLEAN) $(NAME)
 
 re : fclean all
 .PHONY: all clean fclean re
