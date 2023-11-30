@@ -23,10 +23,10 @@ OBJ = $(SRC:.c=.o) #los convierte en punto O a todas los de adentro de SRC
 
 all: $(NAME) #para ejecutar todo lo que va despues de ALL
 
-$(NAME): %.o
+$(NAME): .c.o
 	@ar rcs $(NAME) $(OBJ)
 
-%.o:
+.c.o:
 	$(CC) $(FLAGS) -c $(SRC)
 
 clean:

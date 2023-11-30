@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/29 17:26:59 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/11/30 15:53:59 by luiglesi         ###   ########.fr       */
+/*   Created: 2023/11/30 16:10:39 by luiglesi          #+#    #+#             */
+/*   Updated: 2023/11/30 16:32:36 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strnstr(const char *haystack, const char *needle, size_t len)
-/* {
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
+{
 	size_t	i;
-	size_t	hlen;
+	unsigned const char	*str1;
+	unsigned const char	*str2;
 
 	i = 0;
-	hlen = strlen((char *) haystack)
-
-	while (haystack != '\0' && needle)
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
+	while (i < n)
 	{
-		needle[i]++;
+		if (str1[i] != str2[i])
+		{
+			return ((int *)(str1[i] - str2[i]));
+		}
+		str1[i]++;
+		str2[i]++;
+		i++;
 	}
-} */
-
+}

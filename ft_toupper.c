@@ -6,14 +6,14 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 15:11:50 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/10/05 18:40:52 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/11/30 16:47:04 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_toupper(int c)
-{	
+{
 	if ((c >= 97 && c <= 120))
 		return (c - 32);
 	else

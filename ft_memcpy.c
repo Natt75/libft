@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 13:54:42 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/11/30 14:17:35 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/11/30 16:52:36 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 //la funcion memcpy() function copia n bytes de src a dst 
 #include "libft.h"
 
-void	*memcpy(void *dst, const void *src, size_t n)
+void	ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned int = i;
+	unsigned int	i;
+
 	i = 0;
 	while (i < n)
 	{
