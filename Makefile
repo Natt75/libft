@@ -15,7 +15,9 @@ SRC = 	\
 		ft_strlen.c \
 		ft_atoi.c \
 		ft_strlcat.c \
-		ft_strlcpy.c\
+		ft_strlcpy.c \
+		ft_memmove.c \
+		ft_memcpy.c \
 
 OBJ = $(SRC:.c=.o) #los convierte en punto O a todas los de adentro de SRC
 

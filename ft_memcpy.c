@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcpy.c                                           :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 17:51:24 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/10/05 18:11:45 by luiglesi         ###   ########.fr       */
+/*   Created: 2023/11/30 13:54:42 by luiglesi          #+#    #+#             */
+/*   Updated: 2023/11/30 14:17:35 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//DESCRIPTION
+//la funcion memcpy() function copia n bytes de src a dst 
 #include "libft.h"
 
-void	*memcpy(void *dst, const void *src, size_t n);
+void	*memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned const char	*src1;
-	unsigned char	*dst1;
-	size_t = i;
-
-	src1 = (unsigned char *)src;
-	dst1 = (unsigned char *)dst;
+	unsigned int = i;
 	i = 0;
-	if ((src))
+	while (i < n)
 	{
-
+		((char *)dst)[i] = ((const char *)src[i]);
+		i++;
 	}
+	return (dst);
 }
+//le doy valor a dst y a src un valor
+/*
+unsigned char	*src1;
+	unsigned char	*dst1;
+
+	dst1 = (char *)dst;
+	src1 = (const char *)src;
+	 while (i < n)
+	 dst1[i] = src1[i]
+		i++;
+	return(dst);
+*/

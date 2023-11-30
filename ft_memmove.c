@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 15:46:29 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/11/28 14:45:38 by luiglesi         ###   ########.fr       */
+/*   Created: 2023/11/30 13:35:53 by luiglesi          #+#    #+#             */
+/*   Updated: 2023/11/30 14:02:02 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+void	*memmove(void *dst, const void *src, size_t len)
 {
-	if ((c >= 65 && c <= 90))
-		return (c + 32);
-	else
-		return (0);
+	unsigned char	*src1;
+	unsigned char	*dst1;
+
+	dst1 = (unsigned char *)dst;
+	src1 = (unsigned char *)src;
+	if (src1 <= dst1)
+	{
+		(while len--)
+			(dst1[len] == src1[len])
+	}
 }
-/* int main ()
-{
-    printf("%d", ft_lower('b'));
-} */
+// if(src == NULL && dst == NULL) return(NULL); falta memcpy
+		

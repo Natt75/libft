@@ -6,7 +6,7 @@
 /*   By: luiglesi <luiglesi@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:43:50 by luiglesi          #+#    #+#             */
-/*   Updated: 2023/09/29 17:27:57 by luiglesi         ###   ########.fr       */
+/*   Updated: 2023/11/30 14:19:43 by luiglesi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *str);
 void	ft_bzero(void *s, size_t n);
+void	*memmove(void *dst, const void *src, size_t len);
+void	*memcpy(void *dst, const void *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*strnstr(const char *haystack, const char *needle, size_t len);
 
